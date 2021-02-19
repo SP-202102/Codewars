@@ -2,6 +2,36 @@ def word_mesh(words):
     resultString = ""
     previousWord=""
     for currentWord in words:
+        foundMesh = False
+        if previousWord == "":
+            #first run
+            previousWord = currentWord
+            #treat first round as true
+            foundMesh = True
+        else:
+            #compare longest chain in current word with last chars from previous
+            for i in range(min(len(currentWord), len(previousWord)), 1,-1):
+                if currentWord[:i] == previousWord[-i:]:
+                    resultString += currentWord[:i]
+                    foundMesh = True
+                    break
+        
+        if foundMesh == False:
+            return "failed to mesh"
+
+        previousWord = currentWord
+
+    return resultString
+
+print(word_mesh(["allow", "lowering", "ringmaster", "terror"]), "lowringter")
+print(word_mesh(["abandon", "donation", "onion", "ongoing"]), "dononon")
+print(word_mesh(["jamestown", "ownership", "hippocampus", "pushcart", "cartographer", "pheromone"]), "ownhippuscartpher")
+print(word_mesh(["beacon", "condominium", "umbilical", "california"]), "conumcal")
+
+    def word_mesh_with_prints(words):
+    resultString = ""
+    previousWord=""
+    for currentWord in words:
         print("Current Word: '" + currentWord + "'")
         print("=======================================")
         foundMesh = False
@@ -28,10 +58,6 @@ def word_mesh(words):
 
     return resultString
 
-print(word_mesh(["allow", "lowering", "ringmaster", "terror"]), "lowringter")
-print(word_mesh(["abandon", "donation", "onion", "ongoing"]), "dononon")
-print(word_mesh(["jamestown", "ownership", "hippocampus", "pushcart", "cartographer", "pheromone"]), "ownhippuscartpher")
-print(word_mesh(["beacon", "condominium", "umbilical", "california"]), "conumcal")
 
 #this idea was too complicated overall:
 # def word_mesh2(words):
