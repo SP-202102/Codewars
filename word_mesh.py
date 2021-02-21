@@ -1,3 +1,5 @@
+
+
 def word_mesh(words):
     resultString = ""
     previousWord=""
@@ -60,7 +62,7 @@ print(word_mesh(["beacon", "condominium", "umbilical", "california"]), "conumcal
 
 
 #this idea was too complicated overall:
-# def word_mesh2(words):
+def word_mesh2(words):
     resultString = ""
     previousWord=""
     for currentWord in words:
