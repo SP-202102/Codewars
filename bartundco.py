@@ -2,6 +2,7 @@ namelist = [{'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'}]
 names = namelist[0:]
 print(names)
 names1 = []
+#blabla
 
 def namelistFunction(names):
 
