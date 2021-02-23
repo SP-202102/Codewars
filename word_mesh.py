@@ -30,7 +30,7 @@ print(word_mesh(["abandon", "donation", "onion", "ongoing"]), "dononon")
 print(word_mesh(["jamestown", "ownership", "hippocampus", "pushcart", "cartographer", "pheromone"]), "ownhippuscartpher")
 print(word_mesh(["beacon", "condominium", "umbilical", "california"]), "conumcal")
 
-    def word_mesh_with_prints(words):
+def word_mesh_with_prints(words):
     resultString = ""
     previousWord=""
     for currentWord in words:
