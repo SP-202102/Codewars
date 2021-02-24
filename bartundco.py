@@ -5,7 +5,7 @@ names1 = []
 #blabla
 
 def namelistFunction(names):
-
+    
         for i, j in enumerate(namelist):
             blabla = 5
             names1.append(namelist[i].values())
