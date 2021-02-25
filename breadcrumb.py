@@ -1,23 +1,30 @@
-class urlHandler():
-    elementList = []
-    def splitUrl(url, separator ="/" ):
-        elementList = url.split( separator )
-        print("Element List:", elementList)
+class urlHandler:
+    def __init__(self):
+        self.elementList = []
+        self.outputHtml = ""
+
+    def splitUrl(self, url, separator ="/" ):
+        self.elementList = url.split( separator )
+        print("Element List:", self.elementList)
+        return
 
 
-    def getBcMenu( url, separator=" : " ):
-        splitUrl( url)
-        return (buildOutPutUrl(separator))
+    def buildOutPutUrl(self, separator):
+        return( separator.join(self.elementList) )
+
+
+    def getBcMenu( self, url, separator=" : " ):
+        self.splitUrl(url)
+        self.outputHtml = self.buildOutPutUrl(separator)
+        return ( self.outputHtml )
         
         
-    def buildOutPutUrl(separator):
-        return( separator.join(elementList))
-
-
 
 def generate_bc(url, separator):
+    x = urlHandler()
+
     outputHtml = ""
-    outputHtml = getBcMenu( url, separator )
+    outputHtml = x.getBcMenu( url, separator )
 
     print(outputHtml) 
 
