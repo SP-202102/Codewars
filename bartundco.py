@@ -2,14 +2,15 @@ namelist = [{'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'}]
 names = namelist[0:]
 print(names)
 names1 = []
-#blabla
+blabla = 0
+
 
 def namelistFunction(names):
-    
-        for i, j in enumerate(namelist):
-            blabla = 5
-            names1.append(namelist[i].values())
-        return names1
+    blabla = 0
+    for i, j in enumerate(namelist):
+        blabla = 5
+        names1.append(namelist[i].values())
+    return names1
 
 print(namelistFunction(names))
 
