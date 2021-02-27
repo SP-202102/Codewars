@@ -4,7 +4,7 @@
 print(__file__)
 
 #works, NOT if folder is subfolder of parent folder
-import codewars_test as Test
+from .. import codewars_test as Test
 
 def hello_hello():
     return "hello_hello"
