@@ -1,1 +1,1 @@
-#import codewars_test as Test
+import codewars_test as Test

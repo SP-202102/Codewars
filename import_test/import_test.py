@@ -1,6 +1,9 @@
 #works, NOT if folder is subfolder of parent folder
 #import codewars_test as Test
 
+# not even this works:
+from .. import some_dummy_code
+
 print(__file__)
 
 #works, NOT if folder is subfolder of parent folder
