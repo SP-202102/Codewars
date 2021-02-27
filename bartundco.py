@@ -1,20 +1,22 @@
-namelist = [{'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'}]
-names = namelist[0:]
-print(names)
+inputNamelist = [{'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'}]
+names = inputNamelist[0:]
+#print(names)
 names1 = []
 blabla = 0
 
 
-def namelistFunction(names):
-    blabla = 0
-    for i, j in enumerate(namelist):
-        blabla = 5
-        names1.append(namelist[i].values())
-    return names1
+def namelist(names):
+    if len(names) > 1:
+        # return '{} & {}'.format(', '.join(name['name'] for name in names[:-1]), 
+        #                         names[-1]['name'])
+        return ' & '.join(', '.join(name['name'] for name in names[:-1]), 
+                                names[-1]['name'])
+    elif names:
+        return names[0]['name']
+    else:
+        return ''
 
-print(namelistFunction(names))
-
-print(blabla)
+print(namelist(inputNamelist))
 
 #names2 = []
 #print ("+".join(namelist))
