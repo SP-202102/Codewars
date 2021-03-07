@@ -5,6 +5,11 @@
 # --- OR ---
 # executing the default use case
 #
+# TODO: fully(!) understand Scoping and visibilty regarding imports
+# TODO: understanding normal project setup
+# TODO: understanding classes and their instantiating in that context
+# TODO: understanding the testing frameworks of Python
+#
 # I am still GUESSING:
 # including libraries aso. should be done in Init
 # including use cases or modules should be done here

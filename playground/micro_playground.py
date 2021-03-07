@@ -1,5 +1,10 @@
 #file to try small things isolated
 
+#%%
+print("hello cell world")
+# %%
+
+
 def splitUrl( url, separator ="/" ):
         elementList = url.split( separator )
         print("Element List:", elementList)

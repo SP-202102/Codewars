@@ -1,8 +1,17 @@
 # test cases for 000-hello_world.py
+# #
+#       THIS SHOULD BE THE TEST CONTROL FILE
+#
+#       current State: BROKEN, due to rewrite of util base classes
+#       main issue is STILL the import-logic
+#
 
-# 
-from .. import codewars_test as Test # <- does not work, would require fixing path
-# alternate solution: import in __init__.py in root of project -> available for all modules in project
+# trying in __INIT__ 
+# import codewars_test as Test 
+# from .. import codewars_test as Test 
+#
+# Currently Trying: import in __init__.py in root of project -> available for all modules in project
+# TODO: cleanup
 
 #import our actual code for testing here
 import p000_hello_world as Solution

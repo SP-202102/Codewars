@@ -1,4 +1,8 @@
 # TODO: make this a class
+#
+# Status: in writing
+#
+
 class warKata:
 
     List = {
@@ -19,6 +23,9 @@ class warKata:
         return self.List[kataNumber] + "_t.py"
 
 
+# copied that from somewhere:
+# Dont know if and how it works... YET
+#
 def get_class(fully_qualified_path, module_name, class_name, *instantiation):
     """
     Returns an instantiated class for the given string descriptors
