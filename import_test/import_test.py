@@ -1,4 +1,13 @@
-#works, NOT if folder is subfolder of parent folder
+# #
+#       THIS IS JUST FOR TESTING HOW AND IF THE IMPORTS WORK
+#
+# # 
+
+#
+#       current State: 
+#
+# WOULD work NOT, if folder is subfolder of common parent folder with the folder to include
+#
 #import codewars_test as Test
 
 
@@ -14,11 +23,15 @@
 
 print(__file__)
 
-#works, NOT if folder is subfolder of parent folder
-#import codewars_test as Test
-
 def hello_hello():
     return "hello_hello"
 
-# So this does not work, because Test is not defined:
+#
+#       SUB ISSUE 1
+#
+# see MAIN ISSUE
+# leads to: "Test" is not defined
+#
 # print(Test.assert_equals(hello_hello(),"Hello World!", "result should be \"Hello World!\""))
+#
+#       /SUB ISSUE 1

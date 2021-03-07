@@ -22,5 +22,3 @@ currentKata = kata.getCode(0)
 print("Trying to import: " + currentKata)
 importlib.import_module(currentKata)
 
-execTest()
-
