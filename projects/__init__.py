@@ -1,1 +1,0 @@
-import codewars_test as Test

@@ -1,7 +1,20 @@
 #file to try small things isolated
 
 #%%
+#
+# to test,if importing also means "executing"
+#
+# # does it not only include hello_world, but also output "Hello World!"?
+
+import hello_world
+
+# # answer: yes it does
+
+
+#%%
+
 print("hello cell world")
+
 # %%
 
 

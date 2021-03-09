@@ -5,7 +5,7 @@
 # --- OR ---
 # executing the default use case
 #
-# TODO: fully(!) understand Scoping and visibilty regarding imports
+# TODO: fully(!) understand Scoping and visibilty code/function/module/imports/global vs. in classes
 # TODO: understanding normal project setup
 # TODO: understanding classes and their instantiating in that context
 # TODO: understanding the testing frameworks of Python
