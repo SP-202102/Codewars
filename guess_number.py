@@ -47,5 +47,5 @@ while playAgain:
                 print("Deine geratene Zahl ist zu KLEIN!")
                 
                 
-                hallo frank wie geht es dir
+                hallo frank wie geht es dir 
 
