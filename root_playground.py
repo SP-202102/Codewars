@@ -9,6 +9,8 @@
 print("-- 1 --")
 #import project_hello_world
 # # returns: ModuleNotFoundError
+myVariableA = 5
+print(__file__ + "myVariableA: " + str( myVariableA ) )
 
 print("-- 2 --")
 import my_projects
@@ -26,4 +28,9 @@ import my_projects.project_hello_world
 print("-- end of cell --")
 
 # %%
+
+#even if myVariableA was changed in the imported module, 
+# it does not effect the "global" variable here
+print(__file__ + "myVariableA: " + str( myVariableA ) )
+
 print("-- end of file --")
