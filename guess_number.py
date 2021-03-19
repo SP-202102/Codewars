@@ -45,4 +45,7 @@ while playAgain:
                 print("Deine geratene Zahl ist zu GROSS!")
             else:
                 print("Deine geratene Zahl ist zu KLEIN!")
+                
+                
+                
 
