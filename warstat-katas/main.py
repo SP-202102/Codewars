@@ -13,7 +13,10 @@
 # I am still GUESSING:
 # including libraries aso. should be done in Init
 # including use cases or modules should be done here
-# # 
+# 
+# TODO: update to stupid coding conventions for variable names using underscore instead of CamelCase
+# TODO: use: module_name, package_name, ClassName, method_name, ExceptionName, function_name, 
+#            GLOBAL_CONSTANT_NAME, global_var_name, instance_var_name, function_parameter_name, local_var_name.
 
 #
 #       current State: BROKEN, due to rewrite of util base classes
